@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'com.epam'
+group 'com.epam.jwd'
 version '1.0-SNAPSHOT'
 
 repositories {

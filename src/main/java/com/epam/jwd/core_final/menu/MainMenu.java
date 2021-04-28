@@ -9,11 +9,11 @@ public class MainMenu {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MainMenu.class);
 
-    static final String menu = "1 - Get info about CrewMembers\n"
-            + "2 - Update CrewMembers\n"
-            + "3 - Get info about Spaceships\n"
-            + "4 - Update Spaceships\n"
-            + "5 - Create mission\n"
+    static final String menu = "1 - Get info about all CrewMembers\n"
+            + "2 - Update state CrewMembers\n"
+            + "3 - Get info about all Spaceships\n"
+            + "4 - Update state Spaceships\n"
+            + "5 - Create new mission\n"
             + "6 - Update mission\n"
             + "7 - Write mission\n"
             + "8 - Get info about missions\n"
