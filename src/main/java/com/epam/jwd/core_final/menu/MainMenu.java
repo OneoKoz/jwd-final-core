@@ -9,17 +9,17 @@ public class MainMenu {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MainMenu.class);
 
-    static final String menu = "1 - Get info about all CrewMembers\n"
+    static final String menu = "\n1 - Get info about all CrewMembers\n"
             + "2 - Update state CrewMembers\n"
             + "3 - Get info about all Spaceships\n"
             + "4 - Update state Spaceships\n"
             + "5 - Create new mission\n"
             + "6 - Update mission\n"
             + "7 - Write mission\n"
-            + "8 - Get info about missions\n"
-            + "9 - Get info about planets\n"
+            + "8 - Get info about all missions\n"
+            + "9 - Get info about all planets\n"
             + "10 - Exit\n\n"
-            + "Input menu item number:\n";
+            + "Input number:\n";
     private static final String EXIT_FROM_SUBMENU = "e";
     private static final int GET_CREW_MEMBERS = 1;
     private static final int UPDATE_CREW_MEMBERS = 2;
@@ -41,7 +41,7 @@ public class MainMenu {
         crewMembersMenu = new CrewMembersMenu(this);
         spaceShipMenu = new SpaceShipMenu(this);
         missionMenu = new MissionMenu(this);
-        planetMenu = new PlanetMenu(this);
+        planetMenu = new PlanetMenu();
     }
 
     public void start() {
@@ -56,6 +56,7 @@ public class MainMenu {
     private void handleInput() {
         String wrongMenuInput = "Wrong menu input";
         do {
+            System.out.println(menu);
             Scanner scan = new Scanner(System.in);
             if (scan.hasNextInt()) {
                 int n = scan.nextInt();

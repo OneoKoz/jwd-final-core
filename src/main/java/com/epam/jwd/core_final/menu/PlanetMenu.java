@@ -7,7 +7,7 @@ import java.util.List;
 
 public class PlanetMenu {
 
-    public PlanetMenu(MainMenu mainMenu) {
+    public PlanetMenu() {
     }
 
     void printPlanets() {
