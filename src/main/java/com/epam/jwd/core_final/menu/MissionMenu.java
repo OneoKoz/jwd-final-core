@@ -15,8 +15,8 @@ import com.epam.jwd.core_final.service.impl.CrewServiceImpl;
 import com.epam.jwd.core_final.service.impl.MissionServiceImpl;
 import com.epam.jwd.core_final.service.impl.SpaceShipServiceImpl;
 import com.epam.jwd.core_final.service.impl.SpacemapServiceImpl;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -27,7 +27,7 @@ import static com.epam.jwd.core_final.domain.MissionResult.IN_PROGRESS;
 
 public class MissionMenu {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(MainMenu.class);
+    private static final Logger LOGGER = LogManager.getLogger(MainMenu.class);
 
     private final MainMenu mainMenu;
 

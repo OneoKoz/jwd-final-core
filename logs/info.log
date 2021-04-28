@@ -1,0 +1,2 @@
+2021-04-28 22:06:47.657 [main] INFO  com.epam.jwd.core_final.context.DataLoader - Crew member updated : 
+CrewMember{id=1, name='Davey Bentley', role=MISSION_SPECIALIST, rank=TRAINEE, isReadyForNextMissions=true}

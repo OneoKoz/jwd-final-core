@@ -5,8 +5,8 @@ import com.epam.jwd.core_final.domain.Spaceship;
 import com.epam.jwd.core_final.exception.SpaceshipUpdateException;
 import com.epam.jwd.core_final.factory.impl.SpaceshipFactory;
 import com.epam.jwd.core_final.service.impl.SpaceShipServiceImpl;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.List;
 import java.util.Optional;
@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 public class SpaceShipMenu {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(SpaceShipMenu.class);
+    private static final Logger LOGGER = LogManager.getLogger(SpaceShipMenu.class);
 
     private final MainMenu mainMenu;
 
